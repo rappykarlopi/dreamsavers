@@ -6,11 +6,15 @@ DreamSavers is designed to help users calculate simple interest and time deposit
 📌 Note: The interest rates used are based on official bank websites as of March 2023 and may be subject to change.
 
 ✨ Features
+
 📈 Simple Interest Calculator
 
 🏦 Time Deposit Calculator
+
 📄 Save and Load Results
+
 🧾 Log History
+
 📊 Bank Interest Information
 
 🎨 Sidebar Menu GUI
