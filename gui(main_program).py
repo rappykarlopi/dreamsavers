@@ -1,6 +1,6 @@
 from tkinter import *
 from tkinter import filedialog
-from PIL import ImageTk,Image
+from PIL import Image, ImageTk
 from interest import *
 from bank_comparison import *
 
@@ -28,7 +28,7 @@ def simple_page():
     global simple_bg
 
     simple = Image.open("Assets\coins.jpg")
-    resized_simple = simple.resize((854, 480), Image.ANTIALIAS)
+    resized_simple = simple.resize((854, 480), Image.LANCZOS)
     simple_bg = ImageTk.PhotoImage(resized_simple)
 
     sim_bg = Label(simple_frame, image=simple_bg).place(x=-2, y=-2)
@@ -188,11 +188,11 @@ def simple_page():
     bpi_image = (Image.open("Assets\logo2.jpg"))
     pnb_image = (Image.open("Assets\pnb.png"))
 
-    resized_noBank_image = noBank_image.resize((150,150), Image.ANTIALIAS)
-    resized_custom_image = custom_image.resize((150,150), Image.ANTIALIAS)
-    resized_bdo_image = bdo_image.resize((150,150), Image.ANTIALIAS)
-    resized_bpi_image = bpi_image.resize((150,150), Image.ANTIALIAS)
-    resized_pnb_image = pnb_image.resize((150,150), Image.ANTIALIAS)
+    resized_noBank_image = noBank_image.resize((150,150), Image.LANCZOS)
+    resized_custom_image = custom_image.resize((150,150), Image.LANCZOS)
+    resized_bdo_image = bdo_image.resize((150,150), Image.LANCZOS)
+    resized_bpi_image = bpi_image.resize((150,150), Image.LANCZOS)
+    resized_pnb_image = pnb_image.resize((150,150), Image.LANCZOS)
 
     noBank_image = ImageTk.PhotoImage(resized_noBank_image)
     custom_image = ImageTk.PhotoImage(resized_custom_image)
@@ -236,7 +236,7 @@ def timedeposit_page():
     global time_dep_bg
 
     time_bg = Image.open("Assets\dep.jpg")
-    resized_time_bg = time_bg.resize((854, 480), Image.ANTIALIAS)
+    resized_time_bg = time_bg.resize((854, 480), Image.LANCZOS)
     time_dep_bg = ImageTk.PhotoImage(resized_time_bg)
 
     background = Label(time_dep_frame, image=time_dep_bg).place(x=-2, y=-2)
@@ -428,11 +428,11 @@ def timedeposit_page():
     bpi_image = (Image.open("Assets\logo2.jpg"))
     pnb_image = (Image.open("Assets\pnb.png"))
 
-    resized_noBank_image = noBank_image.resize((150,150), Image.ANTIALIAS)
-    resized_custom_image = custom_image.resize((150,150), Image.ANTIALIAS)
-    resized_bdo_image = bdo_image.resize((150,150), Image.ANTIALIAS)
-    resized_bpi_image = bpi_image.resize((150,150), Image.ANTIALIAS)
-    resized_pnb_image = pnb_image.resize((150,150), Image.ANTIALIAS)
+    resized_noBank_image = noBank_image.resize((150,150), Image.LANCZOS)
+    resized_custom_image = custom_image.resize((150,150), Image.LANCZOS)
+    resized_bdo_image = bdo_image.resize((150,150), Image.LANCZOS)
+    resized_bpi_image = bpi_image.resize((150,150), Image.LANCZOS)
+    resized_pnb_image = pnb_image.resize((150,150), Image.LANCZOS)
 
     noBank_image = ImageTk.PhotoImage(resized_noBank_image)
     custom_image = ImageTk.PhotoImage(resized_custom_image)
@@ -477,7 +477,7 @@ def bank_info_page():
     global bank_info_bg
 
     bank = Image.open("Assets\info_bank_bg.jpg")
-    resized_bank = bank.resize((854, 480), Image.ANTIALIAS)
+    resized_bank = bank.resize((854, 480), Image.LANCZOS)
     bank_info_bg = ImageTk.PhotoImage(resized_bank)
 
     banking = Label(bank_info_frame, image=bank_info_bg).place(x=-2, y=-2)
@@ -505,9 +505,9 @@ def bank_info_page():
     bpi_image = (Image.open("Assets\logo2.jpg"))
     pnb_image = (Image.open("Assets\pnb.png"))
 
-    resized_bdo_image = bdo_image.resize((150,150), Image.ANTIALIAS)
-    resized_bpi_image = bpi_image.resize((150,150), Image.ANTIALIAS)
-    resized_pnb_image = pnb_image.resize((150,150), Image.ANTIALIAS)
+    resized_bdo_image = bdo_image.resize((150,150), Image.LANCZOS)
+    resized_bpi_image = bpi_image.resize((150,150), Image.LANCZOS)
+    resized_pnb_image = pnb_image.resize((150,150), Image.LANCZOS)
 
     bdo_image = ImageTk.PhotoImage(resized_bdo_image)
     bpi_image = ImageTk.PhotoImage(resized_bpi_image)
@@ -543,8 +543,8 @@ def about_page():
 
     developer_pic = Image.open("Assets\devs.jpg")
     about_bg = Image.open("Assets\code.jpg")
-    resized_developer_pic = developer_pic.resize((300,240), Image.ANTIALIAS)
-    resized_about_bg = about_bg.resize((854,480), Image.ANTIALIAS)
+    resized_developer_pic = developer_pic.resize((300,240), Image.LANCZOS)
+    resized_about_bg = about_bg.resize((854,480), Image.LANCZOS)
     about_bg_pic = ImageTk.PhotoImage(resized_about_bg)
     d_pic = ImageTk.PhotoImage(resized_developer_pic)
 
@@ -569,11 +569,11 @@ def home_page():
     global new_bg, logo
 
     bg = Image.open("Assets\ground.jpg")
-    resized_bg = bg.resize((864,480), Image.ANTIALIAS)
+    resized_bg = bg.resize((864,480), Image.LANCZOS)
     new_bg = ImageTk.PhotoImage(resized_bg)
 
     logo_open = Image.open("Assets\Logo.png")
-    resized_logo = logo_open.resize((200, 200), Image.ANTIALIAS)
+    resized_logo = logo_open.resize((200, 200), Image.LANCZOS)
     logo = ImageTk.PhotoImage(resized_logo)
 
     background = Label(home_frame, image=new_bg).place(x=-2, y=-2)
