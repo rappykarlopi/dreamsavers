@@ -1,19 +1,28 @@
-Welcome To Our Python GUI Program where we used the application of all the fundamentals of programming using Python
+💸 DreamSavers: A Python GUI for Time Deposit and Simple Interest Calculation
+Welcome to DreamSavers — a Python GUI application that demonstrates the practical application of core programming concepts in a user-friendly interface.
 
-DreamSavers is a time deposit and simple interest calculator that outputs the growth of the principal based on the given time and rate of the three banks. The following rates where based on the official bank websites (BDO, BPI, and Landbank) and the data given in the following program is from March 2023 and may change in the future.
+DreamSavers is designed to help users calculate simple interest and time deposit growth based on the interest rates of three major banks in the Philippines: BDO, BPI, and Landbank.
 
-The Following features include:
-- Simple Interest Calculator
-- Time Deposit Calculator
-- Logs
-- Save and Load of Results
-- Sidebar Menu GUI
-- Bank Interest Information
+📌 Note: The interest rates used are based on official bank websites as of March 2023 and may be subject to change.
 
-The program includes the following programming concepts:
+✨ Features
+📈 Simple Interest Calculator
+
+🏦 Time Deposit Calculator
+📄 Save and Load Results
+🧾 Log History
+📊 Bank Interest Information
+
+🎨 Sidebar Menu GUI
+
+🖼️ Image Export (via PIL library)
+
+🧠 Programming Concepts Applied
+This project showcases the use of essential Python programming fundamentals, including:
+
 - Variables
 - Functions
 - Conditional Statements
 - Loops
-- Image Export using PIL library
-- GUI using Tkinter library
+- GUI with Tkinter
+- Image processing with PIL
